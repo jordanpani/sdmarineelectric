@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>24</title>
+<location>Guayaquil</location>
+<description>Cloudy</description>
+<pubDate>Thu, 03 Jan 2013 4:59 am ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Thu" date="3 Jan 2013" low="23" high="31" text="AM Thunderstorms"</forecast1>
+<forecast2> day="Fri" date="4 Jan 2013" low="24" high="32" text="AM Thunderstorms"</forecast2>
+</item>
+
+<item>
+<title>14</title>
+<location>Loja</location>
+<description>Cloudy</description>
+<pubDate>Wed, 02 Jan 2013 7:00 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Thu" date="3 Jan 2013" low="16" high="27" text="Scattered Thunderstorms"</forecast1>
+<forecast2> day="Fri" date="4 Jan 2013" low="14" high="27" text="Scattered Thunderstorms"</forecast2>
+</item>
+
+</channel></rss>

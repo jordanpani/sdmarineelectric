@@ -1,0 +1,8 @@
+﻿User agent: *
+Disallow: /php/
+Disallow: /reservations.php.bak
+Disallow: /TMP1268805.html
+Disallow: /php/verytop.php
+
+Sitemap: http://www.machupicchutravel.com/sitemap.xml
+

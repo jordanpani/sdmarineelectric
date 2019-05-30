@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>90</title>
+<location>Puerto Maldonado</location>
+<description>Mostly Cloudy</description>
+<pubDate>Mar 02, 2014 2:58:00 PM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/27.gif</link>
+<forecast1> day="Sun" date="2 Mar 2014" low="72" high="89" text="Thunderstorms Late"</forecast1>
+<forecast2>day="Mon" date="3 Mar 2014" low="72" high="89" text="Scattered Thunderstorms"</forecast2>
+</item>
+
+<item>
+<title>54</title>
+<location>Puno</location>
+<description>Mostly Cloudy</description>
+<pubDate>Mar 02, 2014 4:59:00 PM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/27.gif</link>
+<forecast1> day="Sun" date="2 Mar 2014" low="38" high="57" text="Partly Cloudy"</forecast1>
+<forecast2> day="Mon" date="3 Mar 2014" low="41" high="57" text="Mostly Cloudy"</forecast2>
+</item>
+
+</channel></rss>
