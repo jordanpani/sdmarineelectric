@@ -1,2 +1,2 @@
 <?php
-ECHO "TESTS";
+echo "test github!";
