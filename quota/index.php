@@ -1,1 +1,0 @@
-<?PHP header("Location: /cgi-bin/quota.cgi"); ?>
