@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>25</title>
+<location>Galapagos Islands</location>
+<description>Mostly Cloudy</description>
+<pubDate>Tue, 11 Sep 2012 12:59 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/28.gif</link>
+<forecast1> day="Tue" date="11 Sep 2012" low="20" high="26" text="Partly Cloudy"</forecast1>
+<forecast2> day="Wed" date="12 Sep 2012" low="21" high="26" text="Cloudy"</forecast2>
+</item>
+
+<item>
+<title>31</title>
+<location>Guayaquil</location>
+<description>Partly Cloudy</description>
+<pubDate>Tue, 11 Sep 2012 1:59 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/30.gif</link>
+<forecast1> day="Tue" date="11 Sep 2012" low="21" high="31" text="Clear"</forecast1>
+<forecast2> day="Wed" date="12 Sep 2012" low="21" high="30" text="Partly Cloudy"</forecast2>
+</item>
+
+</channel></rss>

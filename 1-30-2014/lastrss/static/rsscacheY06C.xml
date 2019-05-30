@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>16</title>
+<location>Loja</location>
+<description>Mostly Cloudy</description>
+<pubDate>Sat, 22 Sep 2012 6:58 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/27.gif</link>
+<forecast1> day="Sat" date="22 Sep 2012" low="15" high="28" text="Partly Cloudy"</forecast1>
+<forecast2> day="Sun" date="23 Sep 2012" low="15" high="29" text="Partly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>21</title>
+<location>Manta</location>
+<description>Mostly Cloudy</description>
+<pubDate>Sat, 22 Sep 2012 11:58 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/27.gif</link>
+<forecast1> day="Sat" date="22 Sep 2012" low="21" high="27" text="Partly Cloudy"</forecast1>
+<forecast2> day="Sun" date="23 Sep 2012" low="22" high="27" text="AM Showers"</forecast2>
+</item>
+
+</channel></rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>17</title>
+<location>Chiclayo</location>
+<description>Fair</description>
+<pubDate>Tue, 16 Oct 2012 4:00 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/33.gif</link>
+<forecast1> day="Tue" date="16 Oct 2012" low="17" high="26" text="Mostly Cloudy"</forecast1>
+<forecast2> day="Wed" date="17 Oct 2012" low="17" high="27" text="Mostly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>8</title>
+<location>Cusco</location>
+<description>Partly Cloudy</description>
+<pubDate>Tue, 16 Oct 2012 4:00 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/29.gif</link>
+<forecast1> day="Tue" date="16 Oct 2012" low="9" high="23" text="AM Showers"</forecast1>
+<forecast2> day="Wed" date="17 Oct 2012" low="8" high="22" text="AM Showers"</forecast2>
+</item>
+
+</channel></rss>

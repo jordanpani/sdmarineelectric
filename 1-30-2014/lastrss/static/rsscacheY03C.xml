@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>14</title>
+<location>Cuenca</location>
+<description>Light Rain</description>
+<pubDate>Wed, 18 Apr 2012 7:00 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/11.gif</link>
+<forecast1> day="Thu" date="19 Apr 2012" low="9" high="20" text="Showers"</forecast1>
+<forecast2> day="Fri" date="20 Apr 2012" low="9" high="20" text="Showers"</forecast2>
+</item>
+
+<item>
+<title>26</title>
+<location>Galapagos Islands</location>
+<description>Cloudy</description>
+<pubDate>Wed, 18 Apr 2012 7:00 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Thu" date="19 Apr 2012" low="24" high="31" text="Scattered Thunderstorms"</forecast1>
+<forecast2> day="Fri" date="20 Apr 2012" low="24" high="31" text="AM Showers"</forecast2>
+</item>
+
+</channel></rss>
