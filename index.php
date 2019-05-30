@@ -1,26 +1,4 @@
-<?php
-include_once("php/verytop.php");
 
-$cThisFile = 'index.php';
-
-$fee = isset($_POST['fee']) ? $_POST['fee'] : (isset($_GET['fee']) ? $_GET['fee'] : '' );
-$rec = isset($_POST['r']) ? $_POST['r'] : (isset($_GET['r']) ? $_GET['r'] : '' );
-if($rec!=''){
-	$rec0 = substr($rec,0,strlen($rec)-5);
-	$rec1 = substr($rec,-5);
-	if($rec0!=md5(' - AppealMedia.com - '.getIP().$rec1) || $fee!=''){
-		header("Location: ".$cThisFile);
-		exit;
-	}
-	require_once('php/sendemail.php');
-}
-
-$cAgent = $_SERVER['HTTP_USER_AGENT'];
-$bIE = false;
-if(preg_match('/MSIE/i',$cAgent)){
-	$bIE = true;
-}
-?>
 	<!DOCTYPE html>
 	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -42,7 +20,7 @@ if(preg_match('/MSIE/i',$cAgent)){
 <link rel="stylesheet" href="css/styles.css">
 			<link rel="stylesheet" href="css/responsive.css">
 			<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-            <script type="text/javascript" src="/js/ganalytics.js"></script>
+            <!--<script type="text/javascript" src="/js/ganalytics.js"></script>-->
 		</head>
 		<body>
 			
@@ -80,126 +58,7 @@ if(preg_match('/MSIE/i',$cAgent)){
 				
 				<div class="get-in-touch" >
 
-<?php
-$nFrm = 1;
-$e = isset($_POST['e']) ? $_POST['e'] : (isset($_GET['e']) ? $_GET['e'] : $nFrm );
-if(isset($_GET['s']) && $_GET['s']==1 && $e==$nFrm)
-$msg[$nFrm] = "<span style='color:#0000FF; font-weight:bold;'><br>Thank you! Your information has been submitted.<br><br></span>";
-if(isset($_GET['s']) && $_GET['s']==0 && $e==$nFrm)
-$msg[$nFrm] = "<span style='color:#DD0000; font-weight:bold;'><br>Error processing contact form!<br><br><br></span>";
-//	$msg[$nFrm] = "<span class='usererr".$nFrm."'>Error processing contact form!</span>";
 
-$bEmail[$nFrm] = false;
-if($bIE){
-	$name = $name==''?'fullname':$fname;
-	$email = $email==''?'email':$email;
-	$phone = $phone==''?'phone':$phone;
-	$comments = $comments==''?'comments':$comments;
-} else {
-	$name = '';
-	$email = '';
-	$phone = '';
-	$comments = '';
-}
-
-$k = isset($_POST['k']) ? $_POST['k'] : (isset($_GET['k']) ? $_GET['k'] : '' );
-if($k!='' && $e==$nFrm){
-	include_once('php/cookie.php');
-	$kpin = substr($k,8);
-	sess_start("temp/",$kpin);
-	sess_close();
-
-	if(strlen($cErr)>1)
-		$msg[$nFrm] = "<span style='color:#DD0000; font-weight:bold;'><br>".$cErr."<br><br></span>";
-	else
-		$msg[$nFrm] = "<span style='color:#DD0000; font-weight:bold;'><br>You have errors! Please review your form and send it again.<br><br></span>";
-
-	if(!validEmail(trim(urldecode($email))))
-		$bEmail[$nFrm] = true;
-}
-
-$cAC = isset($_POST['ac']) ? $_POST['ac'] : (isset($_GET['ac']) ? $_GET['ac'] : '' );
-if($cAC=='')
-$cAC = $cAuth.$cTFile;
-
-require_once("php/vImage.php");
-$vImage = new vImage(2);
-$vImage->loadCodes();
-?>
-<script type="text/javascript" src="js/checkform.js"></script>
-<script type="text/javascript">
-<!--
-// Enter name of mandatory fields
-var fieldRequired<?=$nFrm?> = new Array();
-var selFld<?=$nFrm?> = '';
-var emailfilter=/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i
--->
-</script>											
-
-<form name="frm<?=$nFrm?>" id="contact" action="<?=$cThisFile?>" method="post" onSubmit="return formCheck(this,fieldRequired<?=$nFrm?>,selFld<?=$nFrm?>);"> 
-<input type="hidden" name="r" value="<?=$cAuth.$cTFile?>" />
-<input type="hidden" name="f" value="<?=$cThisFile?>">
-<input type="hidden" name="e" value="<?=$nFrm?>">
-
-					<?=$msg[$nFrm]==''?'<h1>Get in touch</h1>':$msg[$nFrm]?>
-
-						<input type="text" class="txtfld" <?=$bIE==true?'onfocus="if (this.value==\'fullname\') this.value = \'\'" onblur="if (this.value==\'\') this.value = \'fullname\'"':'placeholder="fullname"'?> name="name" value="<?=urldecode($name)?>" <?=$name=='' && $k!='' && $e==$nFrm?'style="color:#FF0000"':''?> />
-						<input type="text" class="txtfld" <?=$bIE==true?'onfocus="if (this.value==\'phone\') this.value = \'\'" onblur="if (this.value==\'\') this.value = \'phone\'"':'placeholder="phone"'?> name="phone" value="<?=urldecode($phone)?>" />
-						<input type="text" class="txtfld" <?=$bIE==true?'onfocus="if (this.value==\'email\') this.value = \'\'" onblur="if (this.value==\'\') this.value = \'email\'"':'placeholder="email"'?> name="email" value="<?=urldecode($email)?>" <?=($email=='' && $k!='' && $e==$nFrm) || ($bEmail[$nFrm] && $k!='' && $e==$nFrm)?'style="color:#FF0000"':''?> />
-						<textarea class="txtarea" <?=$bIE==true?'onfocus="if (this.value==\'comments\') this.value = \'\'" onblur="if (this.value==\'\') this.value = \'comments\'"':'placeholder="comments" onFocus="this.style.color=\'#3D3320\'" onBlur="if(this.value==\'\') this.style.color=\'#3D3320\';"'?> name="comments" /><?=urldecode($comments)?></textarea>
-					<div class="clearfix">
-					<span style="display:block; float:left; width:91px; height:54px; padding: 5px 4px 0 0;"><font id="captcha<?=$nFrm?>"><img src="images/image.php?size=6&sess=<?=$pinCode?>&b=<?=$nFrm?>&r=<?=$cAuth.$cTFile?>" height=35 width=91></font></span>
-<span style="display:block; float:left; padding:17px 5px;"><a onClick="reLoad<?=$nFrm?>('<?=$pinCode?>','1')" href="javascript: void(0)"><img title="Get a new Security Code" src="images/reload.png"></a></span>
-					<? $cCStyle=($k!='' && $e==$nFrm?'id="code" class="txtfld" style="color:#ff0000;float:left;width:115px; margin-top:10px;"':'id="code" class="txtfld" style="float:left;width:115px; margin-top:10px;"').' '.($bIE==true?'onfocus="if(this.value==\'security code\') this.value = \'\'" onblur="if(this.value==\'\') this.value = \'security code\'" value=\'security code\'':'placeholder="security code"');?><?=$vImage->showCodBox(1,$cCStyle); ?>
-					</div>
-					<div style="display:none">
-					<input type="text" name="fee" value="">
-					</div>
-					<div class="clearfix">
-						<input type="reset" class="btn-white re" value="reset">
-						<input type="submit" class="btn-white su" value="submit">
-					</div>
-<input type="hidden" name="form_avar" value="name|email|comments|vImageCodP">
-<input type="hidden" name="form_amsg" value="'Your Full Name'|'Your E-mail Address'|'Your Comments'|'Your Security Code'">
-<?
-if($bIE){
-?>
-<input type="hidden" name="form_aval" value="'fullname'|'email'|'comments'|'security code'">
-<?
-} else {
-?>
-<input type="hidden" name="form_aval" value="''|''|''|''">
-<?
-}
-?>
-<input type="hidden" name="form_aftp" value="''|'E'|''|'G'">
-</form>
-<script>
-<!--
-// Array = ['field Name', 'field Label', 'field Empty value', 'field Type'] - for field Type = N - numeric, E - email address, P - phone format (XXX) XXX - XXXXX / XXX - XXX.XXXX, D -date
-myString = new String()
-myString = document.frm<?=$nFrm?>.form_avar.value;
-aStringA = myString.split("|")
-myString = document.frm<?=$nFrm?>.form_amsg.value;
-aStringB = myString.split("|")
-myString = document.frm<?=$nFrm?>.form_aval.value;
-aStringC = myString.split("|")
-myString = document.frm<?=$nFrm?>.form_aftp.value;
-aStringD = myString.split("|")
-
-for(n=0; n<aStringA.length; n++){
-cEval = "fieldRequired<?=$nFrm?>.push(['"+aStringA[n]+"',"+aStringB[n]+","+aStringC[n]+","+aStringD[n]+"]);";
-eval(cEval);
-}
-
-function reLoad<?=$nFrm?>(sess,b){
-document.getElementById('captcha'+b).innerHTML = '<img src="images/spacer.gif" height="35px" width="91px">';
-var rnr=Math.floor(Math.random()*1001)
-str = "sess="+sess+"&b="+b+"&n="+rnr;
-document.getElementById('captcha'+b).innerHTML = '<img src="images/image.php?size=3&'+str+'&b=<?=$nFrm?>&r=<?=$cAuth.$cTFile?>" height="35px" width="91px">';
-}
--->
-</script>
 				</div>
 
 
@@ -431,120 +290,7 @@ world's great mysteries. more &raquo;</a>
 			
 		<script type="text/javascript" src="js/jquery.simpleWeather.min.js"></script>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-	var temp = 'f';
-	var loc = 'Quito, Eucador';
-	function weatherf(){ 
-	  $.simpleWeather({
-		location: loc,
-		woeid: '',
-		unit: temp,
-		success: function(weather) {
 
-		  tval = weather.temp;
-			if(temp == "f"){
-				if(tval>10 && tval<21)
-					tcolor = "#ccffff";
-				if(tval>20 && tval<31)
-					tcolor = "#99ffff";
-				if(tval>30 && tval<41)
-					tcolor = "#66ccff";
-				if(tval>40 && tval<51)
-					tcolor = "#54a9ff";
-				if(tval>50 && tval<61)
-					tcolor = "#ccff99";
-				if(tval>60 && tval<71)
-					tcolor = "#ffff99";
-				if(tval>70 && tval<81)
-					tcolor = "#ffcc66";
-				if(tval>80 && tval<91)
-					tcolor = "#ff9966";
-				if(tval>90 && tval<101)
-					tcolor = "#cc6666";
-				if(tval>100 && tval<110)
-					tcolor = "#d14949";
-			} else {
-				if(tval>-20 && tval<-9)
-					tcolor = "#ffffff";
-				if(tval>-10 && tval<-4)
-					tcolor = "#ccffff";
-				if(tval>-5 && tval<1)
-					tcolor = "#99ffff";
-				if(tval>0 && tval<6)
-					tcolor = "#66ccff";
-				if(tval>5 && tval<11)
-					tcolor = "#54a9ff";
-				if(tval>10 && tval<16)
-					tcolor = "#ccff99";
-				if(tval>15 && tval<21)
-					tcolor = "#ffff99";
-				if(tval>21 && tval<26)
-					tcolor = "#ffcc66";
-				if(tval>25 && tval<31)
-					tcolor = "#ff9966";
-				if(tval>30 && tval<36)
-					tcolor = "#cc6666";
-				if(tval>35 && tval<40)
-					tcolor = "#d14949";
-			}
-		
-		  if(temp=='f'){
-			  html = '<h6>'+weather.city+'</h6>';
-			  html += '<div class="degree">Currently: <span id="rsstitle" class="rsstitle" style="color:'+tcolor+'">'+weather.temp+'&deg; '+weather.units.temp+' </span><div>';
-			  html += '<div class="tickerimg link"><img src="images/weather/'+weather.code+'.gif" width="90%"></div>';
-			  html += '<div class="current">'+weather.currently+'</div>';
-			  html += '<div class="forecast">Forecast:</div>';
-			  html += '<div id="rssforecast1" class="tickercnt"><b>'+weather.forecast[1].day+' </b>'+weather.forecast[1].date+'<br>Low:'+weather.forecast[1].low+'&deg; &nbsp; High:'+weather.forecast[1].high+'&deg; <br>'+weather.forecast[1].text+'</div>';
-			  html += '<div id="rssforecast2" class="tickercnt"><b>'+weather.forecast[2].day+' </b>'+weather.forecast[2].date+'<br>Low:'+weather.forecast[2].low+'&deg;  &nbsp; High:'+weather.forecast[2].high+'&deg; <br>'+weather.forecast[2].text+'</div>';
-			  html += '<div id="rssforecast3" class="tickercnt"><b>'+weather.forecast[3].day+' </b>'+weather.forecast[3].date+'<br>Low:'+weather.forecast[3].low+'&deg;  &nbsp; High:'+weather.forecast[3].high+'&deg; <br>'+weather.forecast[3].text+'</div>';
-			  html += '<div id="rssforecast4" class="tickercnt"><b>'+weather.forecast[4].day+' </b>'+weather.forecast[4].date+'<br>Low:'+weather.forecast[4].low+'&deg;  &nbsp; High:'+weather.forecast[4].high+'&deg; <br>'+weather.forecast[4].text+'</div>';
-			  html += '<div class="lastdate">Last Updated:<span id="rssdate">'+weather.updated+'</span></div>';
-		  } else {
-			  html = '<h6>'+weather.city+'</h6>';
-			  html += '<div class="degree">Currently: <span id="rsstitle" class="rsstitle">'+weather.alt.temp+'&deg; '+weather.alt.unit+' </span><div>';
-			  html += '<div class="tickerimg link"><img src="images/weather/'+weather.code+'.gif" width="90%"></div>';
-			  html += '<div class="current">'+weather.currently+'</div>';
-			  html += '<div class="forecast">Forecast:</div>';
-			  html += '<div id="rssforecast1" class="tickercnt"><b>'+weather.forecast[1].day+' </b>'+weather.forecast[1].date+'<br>Low:'+weather.forecast[1].alt.low+'&deg; &nbsp; High:'+weather.forecast[1].alt.high+'&deg; <br>'+weather.forecast[1].text+'</div>';
-			  html += '<div id="rssforecast2" class="tickercnt"><b>'+weather.forecast[2].day+' </b>'+weather.forecast[2].date+'<br>Low:'+weather.forecast[2].alt.low+'&deg;  &nbsp; High:'+weather.forecast[2].alt.high+'&deg; <br>'+weather.forecast[2].text+'</div>';
-			  html += '<div id="rssforecast3" class="tickercnt"><b>'+weather.forecast[3].day+' </b>'+weather.forecast[3].date+'<br>Low:'+weather.forecast[3].alt.low+'&deg;  &nbsp; High:'+weather.forecast[3].alt.high+'&deg; <br>'+weather.forecast[3].text+'</div>';
-			  html += '<div id="rssforecast4" class="tickercnt"><b>'+weather.forecast[4].day+' </b>'+weather.forecast[4].date+'<br>Low:'+weather.forecast[4].alt.low+'&deg;  &nbsp; High:'+weather.forecast[4].alt.high+'&deg; <br>'+weather.forecast[4].text+'</div>';
-			  html += '<div class="lastdate">Last Updated:<span id="rssdate">'+weather.updated+'</span></div>';
-		  }
-		  $("#weather").html(html);
-
-		},
-		error: function(error) {
-		  $("#weather").html('<div></div>');
-		}
-	
-	  });
-	  
-	  $('#sloc').change(function(){
-		cLoc = document.getElementById('sloc');
-		loc = cLoc.options[cLoc.selectedIndex].value;
-		weatherf();
-	  });
-	  
-	  $('#atemp').click(function(){
-		if(temp=='f'){
-			temp = 'c';
-			$('.tickerbld').html('<img src="img/fscale2.jpg" alt="" />');
-		} else {
-			temp = 'f';
-			$('.tickerbld').html('<img src="img/fscale1.jpg" alt="" />');
-		}
-		weatherf();
-	  });
-	  
-	}
-	weatherf();
-	
-	setInterval(weatherf, 600000);
-
-  });
-</script>
 			
 		</body>
 	</html>
