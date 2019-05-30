@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<!-- #BeginEditable "doctitle" -->
+<title>Untitled 1</title>
+<!-- #EndEditable -->
+
+<!-- #BeginEditable "header-scripts-and-style-sheets" -->
+ 
+<!-- #EndEditable -->
+
+</head>
+
+
+<table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" ><!--width="628"-->
+<!-- fwtable fwsrc="dialog.png" fwpage="Page 1" fwbase="dialog.png" fwstyle="Dreamweaver" fwdocid = "722371304" fwnested="0" -->
+ 
+  <tr><!-- row 1 -->
+   <td style="height: 48px"><img name="dialog_slice_r1_c1_" src="images/dialog-images/dialog_slice_r1_c1_.png" width="36" height="48" id="dialog_slice_r1_c1_" alt="" style="border: 0"></td>
+   <td style="background-image: url('images/dialog-images/dialog_slice_r1_c3_.png'); background-repeat: repeat-x; height: 48px; background-color:white;" align="right">
+      <img src="images/close-window.gif" alt="Close Window"  onClick="close_dialog_click()" style="display: inline" >
+   </td>
+   <td style="background-image: url('images/dialog-images/dialog_slice_r1_c4_.png'); height: 48px; width:55px">
+   &nbsp;&nbsp;</td>
+  </tr>
+  <tr><!-- row 3 -->
+   <td style="background-image: url('images/dialog-images/dialog_slice_r2_c1_.png'); background-repeat: repeat-y">&nbsp;
+   </td>
+   <td style="background-color:white;">
+   
+   <div id="dialog_content_area" >
+
+<!-- #BeginEditable "content" -->
+   <p>(content)</p>
+<!-- #EndEditable -->
+	<br>
+   </div>
+   
+   </td>
+   <td style="background-image: url('images/dialog-images/dialog_slice_r2_c4_.png'); background-repeat: repeat-y">&nbsp;
+   </td>
+  </tr>
+  <tr><!-- row 4 -->
+   <td style="background-image: url('images/dialog-images/dialog_slice_r4_c1_.png'); width: 36px; height: 64px; background-repeat: no-repeat;">&nbsp;&nbsp;</td>
+   <td style="background-image: url('images/dialog-images/dialog_slice_r4_c2_.png'); background-repeat: repeat-x;  height: 64px;" align="center" valign="top">
+   
+   <span style="font-size: 14pt; font-family:Verdana, Geneva, Tahoma, sans-serif; ">Click:</span>
+   
+   <img src="images/close-window.gif" alt="Close Window"  onClick="close_dialog_click()" style="display: inline" >
+   
+   <span style="font-size: 14pt; font-family:Verdana, Geneva, Tahoma, sans-serif; ">to close this window.</span>
+   
+   </td>
+   <td style="background-image: url('images/dialog-images/dialog_slice_r4_c4_.png'); height: 64px; width: 55px; background-repeat: no-repeat;">&nbsp;
+   </td>
+  </tr>
+<!--   This table was automatically created with Adobe Fireworks   -->
+<!--   http://www.adobe.com   -->
+</table>
+
