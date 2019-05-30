@@ -1,0 +1,5 @@
+<application>
+  <component name="LiveEditOptions" useJBChromeExtension="true">
+    <option name="elementHighlighting" value="true" />
+  </component>
+</application>
