@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>79</title>
+<location>Iquitos</location>
+<description>Mostly Cloudy</description>
+<pubDate>Mar 07, 2014 4:58:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/28.gif</link>
+<forecast1> day="Fri" date="7 Mar 2014" low="73" high="88" text="PM Thunderstorms"</forecast1>
+<forecast2> day="Sat" date="8 Mar 2014" low="73" high="87" text="Thunderstorms"</forecast2>
+</item>
+
+<item>
+<title> </title>
+<location>Nazca</location>
+<description>Unavailable</description>
+<pubDate>Dec 31, 1969 4:00:00 PM</pubDate>
+<link>images/weather_unavailable.gif</link>
+<forecast1></forecast1>
+<forecast2></forecast2>
+</item>
+
+</channel></rss>

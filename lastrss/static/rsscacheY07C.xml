@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>28</title>
+<location>Manta</location>
+<description>Mostly Cloudy</description>
+<pubDate>Fri, 03 May 2013 12:59 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/28.gif</link>
+<forecast1> day="Fri" date="3 May 2013" low="23" high="27" text="Mostly Cloudy"</forecast1>
+<forecast2> day="Sat" date="4 May 2013" low="22" high="26" text="Mostly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>22</title>
+<location>Quito</location>
+<description>Haze</description>
+<pubDate>Fri, 03 May 2013 12:59 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/21.gif</link>
+<forecast1> day="Fri" date="3 May 2013" low="11" high="20" text="AM Showers"</forecast1>
+<forecast2> day="Sat" date="4 May 2013" low="10" high="19" text="Showers"</forecast2>
+</item>
+
+</channel></rss>

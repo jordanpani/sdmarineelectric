@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>16</title>
+<location>Quito</location>
+<description>Haze</description>
+<pubDate>Fri, 10 Aug 2012 7:00 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/21.gif</link>
+<forecast1> day="Fri" date="10 Aug 2012" low="11" high="21" text="Mostly Clear"</forecast1>
+<forecast2> day="Sat" date="11 Aug 2012" low="11" high="21" text="Mostly Sunny"</forecast2>
+</item>
+
+<item>
+<title>9</title>
+<location>Cayambe</location>
+<description>Haze</description>
+<pubDate>Fri, 10 Aug 2012 7:00 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/21.gif</link>
+<forecast1> day="Fri" date="10 Aug 2012" low="11" high="21" text="Mostly Clear"</forecast1>
+<forecast2> day="Sat" date="11 Aug 2012" low="11" high="21" text="Mostly Sunny"</forecast2>
+</item>
+
+</channel></rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>64</title>
+<location>Trujillo</location>
+<description>Cloudy</description>
+<pubDate>Mon, 20 May 2013 4:00 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Mon" date="20 May 2013" low="62" high="68" text="Partly Cloudy"</forecast1>
+<forecast2> day="Tue" date="21 May 2013" low="62" high="68" text="Partly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>64</title>
+<location>Lima</location>
+<description>Cloudy</description>
+<pubDate>Mon, 20 May 2013 4:00 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Mon" date="20 May 2013" low="61" high="72" text="Partly Cloudy"</forecast1>
+<forecast2> day="Tue" date="21 May 2013" low="61" high="72" text="Partly Cloudy"</forecast2>
+</item>
+
+</channel></rss>

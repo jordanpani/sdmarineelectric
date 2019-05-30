@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>59</title>
+<location>Loja</location>
+<description>Mostly Cloudy</description>
+<pubDate>Mon, 20 May 2013 6:58 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/27.gif</link>
+<forecast1> day="Mon" date="20 May 2013" low="58" high="80" text="Showers"</forecast1>
+<forecast2> day="Tue" date="21 May 2013" low="57" high="80" text="Partly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>72</title>
+<location>Manta</location>
+<description>Cloudy</description>
+<pubDate>Mon, 20 May 2013 9:59 pm ECT</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Mon" date="20 May 2013" low="72" high="80" text="Mostly Cloudy"</forecast1>
+<forecast2> day="Tue" date="21 May 2013" low="71" high="79" text="Scattered Thunderstorms"</forecast2>
+</item>
+
+</channel></rss>

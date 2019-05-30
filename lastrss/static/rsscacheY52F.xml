@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>72</title>
+<location>Chiclayo</location>
+<description>Fair</description>
+<pubDate>Mar 26, 2014 12:58:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/33.gif</link>
+<forecast1> day="Wed" date="26 Mar 2014" low="68" high="88" text="Mostly Cloudy"</forecast1>
+<forecast2> day="Thu" date="27 Mar 2014" low="67" high="87" text="Cloudy"</forecast2>
+</item>
+
+<item>
+<title>46</title>
+<location>Cusco</location>
+<description>Partly Cloudy</description>
+<pubDate>Mar 26, 2014 12:58:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/29.gif</link>
+<forecast1> day="Wed" date="26 Mar 2014" low="46" high="67" text="Showers"</forecast1>
+<forecast2> day="Thu" date="27 Mar 2014" low="45" high="66" text="Showers"</forecast2>
+</item>
+
+</channel></rss>

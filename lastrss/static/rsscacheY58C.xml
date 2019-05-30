@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>18</title>
+<location>Trujillo</location>
+<description>Mostly Cloudy</description>
+<pubDate>Fri, 16 Nov 2012 3:00 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/27.gif</link>
+<forecast1> day="Thu" date="15 Nov 2012" low="17" high="21" text="Partly Cloudy"</forecast1>
+<forecast2> day="Fri" date="16 Nov 2012" low="16" high="21" text="Partly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>18</title>
+<location>Lima</location>
+<description>Cloudy</description>
+<pubDate>Fri, 16 Nov 2012 3:00 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/26.gif</link>
+<forecast1> day="Thu" date="15 Nov 2012" low="17" high="20" text="Partly Cloudy"</forecast1>
+<forecast2> day="Fri" date="16 Nov 2012" low="17" high="21" text="Partly Cloudy"</forecast2>
+</item>
+
+</channel></rss>

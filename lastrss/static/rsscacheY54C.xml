@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>34</title>
+<location>Iquitos</location>
+<description>Mostly Cloudy</description>
+<pubDate>Mar 12, 2014 10:59:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/28.gif</link>
+<forecast1> day="Wed" date="12 Mar 2014" low="23" high="32" text="Scattered Thunderstorms"</forecast1>
+<forecast2> day="Thu" date="13 Mar 2014" low="23" high="31" text="Scattered Thunderstorms"</forecast2>
+</item>
+
+<item>
+<title>33</title>
+<location>Nazca</location>
+<description>Fair</description>
+<pubDate>Mar 12, 2014 9:30:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/34.gif</link>
+<forecast1> day="Wed" date="12 Mar 2014" low="8" high="14" text="Partly Cloudy"</forecast1>
+<forecast2> day="Thu" date="13 Mar 2014" low="8" high="14" text="Partly Cloudy"</forecast2>
+</item>
+
+</channel></rss>

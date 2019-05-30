@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>79</title>
+<location>Manta</location>
+<description>Mostly Cloudy</description>
+<pubDate>Aug 28, 2014 8:58:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/28.gif</link>
+<forecast1> day="Thu" date="28 Aug 2014" low="70" high="83" text="Partly Cloudy"</forecast1>
+<forecast2> day="Fri" date="29 Aug 2014" low="71" high="83" text="AM Clouds/PM Sun"</forecast2>
+</item>
+
+<item>
+<title>68</title>
+<location>Quito</location>
+<description>Mostly Cloudy</description>
+<pubDate>Aug 28, 2014 8:58:00 AM</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/28.gif</link>
+<forecast1> day="Thu" date="28 Aug 2014" low="48" high="61" text="Thunderstorms"</forecast1>
+<forecast2>day="Fri" date="29 Aug 2014" low="49" high="69" text="PM Thunderstorms"</forecast2>
+</item>
+
+</channel></rss>

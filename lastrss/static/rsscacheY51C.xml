@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>18</title>
+<location>Lima</location>
+<description>Clear</description>
+<pubDate>Thu, 11 Apr 2013 5:59 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/31.gif</link>
+<forecast1> day="Thu" date="11 Apr 2013" low="17" high="26" text="Partly Cloudy"</forecast1>
+<forecast2> day="Fri" date="12 Apr 2013" low="18" high="26" text="Partly Cloudy"</forecast2>
+</item>
+
+<item>
+<title>18</title>
+<location>Chiclayo</location>
+<description>Fair</description>
+<pubDate>Thu, 11 Apr 2013 5:59 am PET</pubDate>
+<link>http://l.yimg.com/a/i/us/we/52/33.gif</link>
+<forecast1> day="Thu" date="11 Apr 2013" low="17" high="28" text="Mostly Sunny"</forecast1>
+<forecast2> day="Fri" date="12 Apr 2013" low="18" high="29" text="Mostly Sunny"</forecast2>
+</item>
+
+</channel></rss>
