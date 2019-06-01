@@ -4,5 +4,5 @@ RewriteRule ^services$ /services.php
 RewriteRule ^installation$ /installation.php
 RewriteRule ^trouble-shooting$ /trouble-shooting.php
 RewriteRule ^contact$ /contact.php
-
+RewriteRule ^maintenance$ /maintenance.php
 

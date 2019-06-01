@@ -6,7 +6,7 @@ function IncludeContent() {
 
         <div class="category col-4" >
 
-            <div class="category-title"><a href="#">TROUBLESHOOTING</a></div>
+            <div class="category-title"><a href="/trouble-shooting">TROUBLESHOOTING</a></div>
             <div class="img-container">
                 <img src="images-new/multimeter-troubleshooting.gif">
             </div>
@@ -16,7 +16,7 @@ function IncludeContent() {
         </div>
         <div class="category col-4" >
 
-            <div class="category-title"><a href="#">INSTALLATION</a></div>
+            <div class="category-title"><a href="/installation">INSTALLATION</a></div>
             <div class="img-container">
                 <img src="images-new/Repairs.gif">
             </div>
@@ -25,7 +25,7 @@ function IncludeContent() {
             </div>
         </div>
         <div class="category col-4" >
-            <div class="category-title"><a href="#">MAINTENANCE</a></div>
+            <div class="category-title"><a href="/maintenance">MAINTENANCE</a></div>
             <div class="img-container">
                 <img src="images-new/battery-generic.gif">
             </div>

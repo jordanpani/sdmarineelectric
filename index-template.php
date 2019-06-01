@@ -126,7 +126,7 @@
     <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
     <script src="menu-main/script.js"></script>
     <!-- Icon Library -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="menu-main/styles.css"
     <!--END FOR MENU:-->
 
@@ -135,10 +135,13 @@
 <body>
 
 <header>
-    <div class="wrap">
-        <img src="images-new/logo-home-header.gif" alt="Machu Picchu Travel" />
-        <p>Marine Electricians Serving the San Diego Area</p>
-        <div>
+    <div class="wrap row">
+
+        <div class="col-6">
+            <img class="col-6" src="images-new/logo-home-header.gif" alt="Machu Picchu Travel" style="max-width: 100%; height: auto;"/>
+        </div>
+        <div class="col-6;">
+            <p>Marine Electricians Serving the San Diego Area</p>
             <span style="display: block">Call Toll Free</span>
             <span>(619) 745-5393</span>
         </div>
@@ -158,25 +161,16 @@
     background-repeat: repeat;
     background-position: top left;
     height: 135px;">
-    <div style="width: 100%; background-color: #42a6bd; height: 52px; z-index: 1; position:relative">
-
-        <div style="left: 50%;position:absolute;top: 0px;width: 1000px;margin: 0 0 0 -500px">
-            <nav id="menu" >
-                <div id="cssmenu" >
-                    <ul>
-                        <li class="active"><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
-                        <li><a href="http://sdmarineelectric.com/services"><i class="fa fa-fw fa-bars"></i> Services</a></li>
-                        <li><a href="#"><i class="fa fa-fw fa-phone"></i> Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
 
 
-    <div class="white-top" style="position: absolute; top:0px;">
+    <nav id="cssmenu" >
+        <ul>
+            <li class="active"><a href="/"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="/services"><i class="fa fa-fw fa-bars"></i> Services</a></li>
+            <li><a href="/contact"><i class="fa fa-fw fa-phone"></i> Contact</a></li>
+        </ul>
+    </nav>
 
-    </div>
 
     <div style="position:relative">
         <div class="white-top" style="position: absolute; top:0px;"></div>
@@ -187,7 +181,7 @@
     box-sizing: border-box;
     color: rgb(34, 34, 34);
     display: block;
-    height: 30px;
+    height: 10px;
     left: 0px;
     position: absolute;
     text-size-adjust: 100%;
