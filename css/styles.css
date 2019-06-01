@@ -400,13 +400,15 @@
 	#red-divider {
 		height:20px;
 		width:100%;
-		background-image:url('../img/bg-slide-footer-darker.jpg');
+		/*background-image:url('../img/bg-slide-footer-darker.jpg');*/
+		background-color: white;
 		-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 		-moz-box-shadow:    0px 5px 5px rgba(0, 0, 0, 0.3);
 		box-shadow:         0px 5px 5px rgba(0, 0, 0, 0.3);
 	}
 	#red-divider .wrap {
-		background-image:url('../img/bg-slide-footer-lighter.jpg');
+		/*background-image:url('../img/bg-slide-footer-lighter.jpg');*/
+		background-color: grey;
 		height:20px;
 	}
 	
@@ -821,6 +823,7 @@
 		font-family: 'Swis721LtCnBTLight','Arial Narrow', sans-serif;
 		text-align:right;
 	}
+
 	.tours-page #content .cuzco {
 		background-color:#cfcba8;
 		margin-top:20px;

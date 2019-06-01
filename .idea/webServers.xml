@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="711a3460-7457-4971-b3bb-9f7ed5dd2c36" name="localhost" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\sdme-home\public_html" accessType="MOUNT" />
+      </webServer>
+      <webServer id="047d3be6-b5ef-49a7-ad71-f08af3011a90" name="godaddy remote" url="http://107.180.51.8">
+        <fileTransfer host="107.180.51.8" port="21" rootFolder="/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

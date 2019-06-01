@@ -1,0 +1,87 @@
+#categories {
+    margin: -10px auto 20px auto; width: 1000px;
+
+    /*background-color: white;
+    border: #000033  1px  dashed;
+    */
+
+}
+.category {
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 0px;
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    height: 530px;
+    width: 302px;
+    top: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.category img {
+    height: 400px;
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 5px 5px 5px 5px;
+    /*border: 1px #777777 solid;*/
+
+
+    /*display: block;*/
+}
+.img-container {
+    position: relative;
+}
+.category-title {
+    background-color: #42a6bd;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 20px;
+    height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    /*bottom: 440px;
+    position: static;
+     */
+    width:100%;
+    /*display: block;*/
+}
+.category-description a {
+    color: blue;
+    visibility: hidden;
+}
+
+.category-description {
+    background-color: white;
+    opacity: 1.0;
+
+    bottom: 0px;
+    width: 100%;
+    color: black;
+
+    /*display: block;*/
+
+    padding: 5px 5px 5px 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+#footer{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 0px;
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(../img/bg-green.jpg);
+}
