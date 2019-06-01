@@ -1,5 +1,5 @@
 #categories {
-    margin: -10px auto 20px auto; width: 1000px;
+    margin: -10px auto 20px auto;
 
     /*background-color: white;
     border: #000033  1px  dashed;
@@ -13,19 +13,21 @@
     display: inline-block;
     font-family: Verdana, Arial, sans-serif;
     font-size: 13px;
-    height: 530px;
-    width: 302px;
+    height: auto;
+    /*width: 302px;*/
     top: 0px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 
 }
 .category img {
-    height: 400px;
-    width: 100%;
-
+    max-width: 100%; /*do not ever go over original size*/
+    height: auto; /*scale height with width */
     box-sizing: border-box;
     padding: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     /*border: 1px #777777 solid;*/
 
 
