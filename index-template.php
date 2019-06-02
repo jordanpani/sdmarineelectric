@@ -93,29 +93,8 @@
     </style>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <?php
-    /*
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    */
-    ?>
-
     <link rel="stylesheet" href="css/home-page.css">
 
-    <?php
-    /*
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/plugins.js"></script>
-
-
-    <script type="text/javascript" src="/js/ganalytics.js"></script>
-    */
-    ?>
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -134,21 +113,6 @@
 </head>
 <body>
 
-<header>
-    <div class="wrap row">
-
-        <div class="col-6">
-            <img class="col-6" src="images-new/logo-home-header.gif" alt="Machu Picchu Travel" style="max-width: 100%; height: auto;"/>
-        </div>
-        <div class="col-6;">
-            <p>Marine Electricians Serving the San Diego Area</p>
-            <span style="display: block">Call Toll Free</span>
-            <span>(619) 745-5393</span>
-        </div>
-    </div>
-</header>
-
-
 
 <!-- #EndLibraryItem -->
 
@@ -156,13 +120,9 @@
 
 
 
-<div id="content" style="    background-color: #ebe9d5;
-    background-image: url('/img/bg-header.jpg');
-    background-repeat: repeat;
-    background-position: top left;
-    height: 135px;">
 
 
+    <header>
     <nav id="cssmenu" >
         <ul>
             <li class="active"><a href="/"><i class="fa fa-fw fa-home"></i> Home</a></li>
@@ -172,9 +132,32 @@
     </nav>
 
 
+
     <div style="position:relative">
         <div class="white-top" style="position: absolute; top:0px;"></div>
-        <img src="images-new/home-slide-show/image-slide01-medium-size.gif" alt="" style="width: 100%"/>
+        <!--<img src="images-new/home-slide-show/image-slide01-medium-size.gif" alt="" style="width: 100%"/>-->
+
+            <div class="row" style="width: 100%;
+                background-image: url(/images-new/home-slide-show/image-slide01-medium-size.gif);
+                background-repeat: no-repeat;
+                min-height: 244px;
+                background-size: cover;
+            ">
+                <div class="col-6" style="height: 100%;">
+                    <img class="" src="images-new/logo-home-header.gif" alt="Machu Picchu Travel" style="max-width: 100%; height: auto; float: left; left: 15%">
+                </div>
+
+                <div class="col-6">
+                    <p>Marine Electricians Serving the San Diego Area</p>
+                    <span style="display: block">Call Toll Free</span>
+                    <span>(619) 745-5393</span>
+                </div>
+
+            </div>
+
+
+
+
 
         <div id="black-bottom" style="background-color: rgba(0, 0, 0, 0.53);
     bottom: 0px;
@@ -208,10 +191,21 @@ text-size-adjust: 100%;
 width: 100%;
 ">
     </div>
-
+    </header>
+<div id="content" style="    background-color: #ebe9d5;
+    background-image: url('/img/bg-header.jpg');
+    background-repeat: repeat;
+    background-position: top left;
+    ">
     <?php IncludeContent(); ?>
 
-    <div id="blue-divider" style="
+</div> <!--content-->
+
+
+
+    <footer >
+
+        <div id="blue-divider" style="
 
 color: rgb(34, 34, 34);
 background-color: #42a6bd;
@@ -221,17 +215,14 @@ font-size: 13px;
 height: 20px;
 width: 100%;
 ">
-    </div>
-
-    <footer >
-
+        </div>
 
         <div id="footer" style="width: 100%; margin: 0px 0px 0px 0px">
 
         </div>
     </footer>
 
-</div> <!--content-->
+
 
 
 

@@ -1,10 +1,10 @@
 <?php
 function IncludeContent() {
-?>
-<div style="text-align: center;">
-This page is under construction.
-</div>
-<?php
+    ?>
+    <div>
+        This page is undergoing construction. Please call us at (619) 745-5393 to be in touch.
+    </div>
+    <?php
 }
 
 include "index-template.php";
