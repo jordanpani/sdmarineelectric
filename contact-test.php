@@ -1,8 +1,5 @@
 
 <?php
-// EDIT THE 2 LINES BELOW AS REQUIRED
-$email_to = "email@sdmarineelectric.com";
-$email_subject = "Contact Form - SDME";
 
 function died($error)
 {
@@ -127,6 +124,10 @@ $nl = "\r\n<br>";
         $headers .= "Content-type:text/html;charset=UTF-8\r\n";
         //$headers .= 'Reply-To: '.$email_from."\r\n";
         $headers .= "From: $email_from\r\n";
+
+        // EDIT THE 2 LINES BELOW AS REQUIRED
+        $email_to = "email@sdmarineelectric.com";
+        $email_subject = "Contact Form - SDME";
 
         $result = mail($email_to, $email_subject, $email_message, $headers);
 
