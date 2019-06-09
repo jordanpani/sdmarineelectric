@@ -7,109 +7,34 @@
     <meta name="description" content="San Diego Marine Electric">
     <meta name="keywords" content="San Diego Marine Electric">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .row::after {
-            content: "";
-            clear: both;
-            display: block;
-        }
-
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
-
-        html {
-            font-family: "Lucida Sans", sans-serif;
-        }
-
-        .header {
-            background-color: #9933cc;
-            color: #ffffff;
-            padding: 15px;
-        }
-
-
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu li {
-            padding: 8px;
-            margin-bottom: 7px;
-            background-color: #33b5e5;
-            color: #ffffff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-
-        .menu li:hover {
-            background-color: #0099cc;
-        }
-
-
-        .aside {
-            background-color: #33b5e5;
-            padding: 15px;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-
-        .footer {
-            background-color: #0099cc;
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-            padding: 15px;
-        }
-
-        /* For desktop: */
-        .col-1 {width: 8.33%;}
-        .col-2 {width: 16.66%;}
-        .col-3 {width: 25%;}
-        .col-4 {width: 33.33%;}
-        .col-5 {width: 41.66%;}
-        .col-6 {width: 50%;}
-        .col-7 {width: 58.33%;}
-        .col-8 {width: 66.66%;}
-        .col-9 {width: 75%;}
-        .col-10 {width: 83.33%;}
-        .col-11 {width: 91.66%;}
-        .col-12 {width: 100%;}
-
-        @media only screen and (max-width: 768px) {
-            /* For mobile phones: */
-            [class*="col-"] {
-                width: 100%;
-            }
-        }
-    </style>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" href="css/home-page.css">
-
+    <script type="text/javascript" src="/js/every-page.js"></script>
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <link rel="stylesheet" href="/css-new/every-page.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="/css/home-page.css">
 
 
     <!--FOR MENU-->
 
 
     <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
-    <script src="menu-main/script.js"></script>
+    <script src="/menu-main/script.js"></script>
     <!-- Icon Library -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="menu-main/styles.css"
+    <link rel="stylesheet" href="/menu-main/styles.css"
     <!--END FOR MENU:-->
 
-
+    <?php
+        if (function_exists("IncludeInHead")) {
+            IncludeInHead();
+        } else {
+            echo "<!--Message: IncludeInHead() not found.-->";
+        }
+        ?>
 </head>
 <body>
 
@@ -144,13 +69,15 @@
                 background-size: cover;
             ">
                 <div class="col-6" style="height: 100%;">
-                    <img class="" src="images-new/logo-home-header.gif" alt="Machu Picchu Travel" style="max-width: 100%; height: auto; float: left; left: 15%">
+                    <img class="" src="/images-new/logo-home-header-v2.png" alt="San Diego Marine Electric" style="max-width: 100%; height: auto; float: left; left: 15%">
                 </div>
 
-                <div class="col-6">
-                    <p>Marine Electricians Serving the San Diego Area</p>
-                    <span style="display: block">Call Toll Free</span>
-                    <span>(619) 745-5393</span>
+                <div class="header-info col-6">
+                        <div class="header-info-background">
+                            <div class="slogan">Marine Electricians Serving the San Diego Area</div>
+                            <div class="call">Call Us</div>
+                            <div class="phone"><a href="tel:6197455393">(619) 745-5393</a></div>
+                        </div>
                 </div>
 
             </div>

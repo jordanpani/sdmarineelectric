@@ -1,5 +1,6 @@
 <?php
 function IncludeContent() {
+    
 ?>
     <div id="categories" class="row" >
 
