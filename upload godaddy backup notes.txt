@@ -1,0 +1,4 @@
+#note do not upload entire home directory.
+#godaddy server "does not like it"
+# only upload html directory from now on
+

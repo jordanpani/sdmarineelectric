@@ -1,8 +1,9 @@
 
 <?php
 
+include_once( $_SERVER['DOCUMENT_ROOT'] . "/header.php" );
 //included file contains form settings
-include "contact-form/contact-settings.php";
+\Header\RequireFromRoot("contact-form/contact-settings.php");
 
 
 function IncludeInHead() {
@@ -10,7 +11,7 @@ function IncludeInHead() {
 
     <script src="/contact-form/contact-form-validation.js"></script>
 	<script>
-    required.add('Full_Name','NOT_EMPTY','Full Name');
+        required.add('Full_Name','NOT_EMPTY','Full Name');
 	required.add('Email_Address','EMAIL','Email Address');
 	required.add('Your_Message','NOT_EMPTY','Your Message');
 	required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
@@ -20,6 +21,7 @@ function IncludeInHead() {
 }
 
 function get_cookie_value($field_name) {
+    //gets the value of a cookie that is ready for displaying in html
     global $cookieName;
     if (isset($_COOKIE[$cookieName])) {
         if (isset($_COOKIE[$cookieName][$field_name])) {
@@ -51,21 +53,24 @@ function IncludeContent()
     // after the page reloads, print them out
     //echo "Read Cookies: <br />\r\n";
     if (isset($_COOKIE[$cookieName])) {
+        
         foreach ($_COOKIE[$cookieName] as $name => $value) {
             $name = htmlspecialchars($name);
             $value = htmlspecialchars($value);
-            if ($_SERVER["HTTP_HOST"]=="localhost")
+            if ($_SERVER["HTTP_HOST"]=="localhost") {
+                //if there are cookies print them out
                 echo "$name : $value <br />\n";
+            }
+            //otherwise read them and store them in memory
             $CONTACT_FORMS_COOKIE[$name] = $value;
         }
-    } else {
-        if ($_SERVER["HTTP_HOST"]=="localhost")
+    } else { 
             echo "No Cookie Named \$_COOKIE[$cookieName] found";
     }
 
 
         ?>
-        <form name="contactform" method="post" action="/contact-form-submit.php" onsubmit="return validate.check(this)">
+        <form name="contactform" method="post" action="/contact-form/contact-form-submit.php" onsubmit="return validate.check(this)">
                 <table class="contactform">
                     <tr>
                         <td colspan="2">
@@ -138,5 +143,5 @@ function IncludeContent()
 
 } //end function
 
-include "index-template.php";
+ \Header\RequireFromRoot("index-template.php");
 ?>

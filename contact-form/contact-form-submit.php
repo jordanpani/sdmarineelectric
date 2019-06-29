@@ -1,8 +1,10 @@
 
 <?php
-
+    //use this at the top of every php page
+    include_once( $_SERVER['DOCUMENT_ROOT'] . "/header.php" );
+   
 //included file contains form settings
-include "contact-form/contact-settings.php";
+\Header\RequireFromRoot("contact-form/contact-settings.php");
 
 //SAVE THE POSTED VARIABLES TO THE BROWSER AS COOKIES
 //THIS MUST BE CALLED BEFORE HEADER GETS SENT. THIS MEANS BEFORE ANY HTML IS SENT OUT TO THE BROWSER.
@@ -183,5 +185,5 @@ $nl = "\r\n<br />";
     }  //end check for form post
 } //end function
 
-include "index-template.php";
+\Header\RequireFromRoot ("index-template.php");
 ?>

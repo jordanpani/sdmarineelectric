@@ -1,4 +1,7 @@
 <?php
+    //use this at the top of every php page
+   include_once( $_SERVER['DOCUMENT_ROOT'] . "/header.php" );
+   
 function IncludeInHead() {
     ?>
     <script>
@@ -33,5 +36,5 @@ function IncludeContent() {
 <?php
 }
 
-include "index-template.php";
+\Header\RequireFromRoot ("index-template.php");
 ?>
